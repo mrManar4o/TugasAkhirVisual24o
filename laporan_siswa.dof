@@ -123,3 +123,17 @@ Private=0
 DLL=0
 Locale=14345
 CodePage=1252
+[Excluded Packages]
+C:\Program Files (x86)\Borland\FastReport 4\LibD7\frx7.bpl=(untitled)
+C:\Program Files (x86)\Borland\FastReport 4\LibD7\fs7.bpl=(untitled)
+C:\Program Files (x86)\Borland\FastReport 4\LibD7\fsADO7.bpl=(untitled)
+C:\Program Files (x86)\Borland\FastReport 4\LibD7\fsDB7.bpl=(untitled)
+C:\Program Files (x86)\Borland\FastReport 4\LibD7\fqb70.bpl=FastQueryBuilder 1.03
+C:\Program Files (x86)\Borland\FastReport 4\LibD7\frxDB7.bpl=(untitled)
+C:\Program Files (x86)\Borland\FastReport 4\LibD7\fsBDE7.bpl=(untitled)
+C:\Program Files (x86)\Borland\FastReport 4\LibD7\fsTee7.bpl=(untitled)
+C:\Program Files (x86)\Borland\FastReport 4\LibD7\frxADO7.bpl=(untitled)
+C:\Program Files (x86)\Borland\FastReport 4\LibD7\frxBDE7.bpl=(untitled)
+C:\Program Files (x86)\Borland\FastReport 4\LibD7\frxDBX7.bpl=(untitled)
+C:\Program Files (x86)\Borland\FastReport 4\LibD7\frxe7.bpl=(untitled)
+C:\Program Files (x86)\Borland\FastReport 4\LibD7\frxTee7.bpl=(untitled)

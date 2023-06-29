@@ -139,19 +139,6 @@ object Form6: TForm6
     Height = 13
     Caption = 'STATUS'
   end
-  object l12: TLabel
-    Left = 288
-    Top = 16
-    Width = 159
-    Height = 33
-    Caption = 'FORM SISWA'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -27
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-  end
   object Edit1: TEdit
     Left = 192
     Top = 88

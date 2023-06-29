@@ -147,8 +147,8 @@ object Form8: TForm8
     TabOrder = 1
   end
   object b1: TButton
-    Left = 56
-    Top = 320
+    Left = 64
+    Top = 240
     Width = 89
     Height = 49
     Caption = 'BARU'
@@ -156,8 +156,8 @@ object Form8: TForm8
     OnClick = b1Click
   end
   object b2: TButton
-    Left = 160
-    Top = 320
+    Left = 168
+    Top = 240
     Width = 89
     Height = 49
     Caption = 'SIMPAN'
@@ -165,8 +165,8 @@ object Form8: TForm8
     OnClick = b2Click
   end
   object b3: TButton
-    Left = 264
-    Top = 320
+    Left = 272
+    Top = 240
     Width = 89
     Height = 49
     Caption = 'EDIT'
@@ -174,8 +174,8 @@ object Form8: TForm8
     OnClick = b3Click
   end
   object b4: TButton
-    Left = 368
-    Top = 320
+    Left = 376
+    Top = 240
     Width = 89
     Height = 49
     Caption = 'HAPUS'
@@ -183,8 +183,8 @@ object Form8: TForm8
     OnClick = b4Click
   end
   object b5: TButton
-    Left = 472
-    Top = 320
+    Left = 480
+    Top = 240
     Width = 89
     Height = 49
     Caption = 'BATAL'
@@ -193,7 +193,7 @@ object Form8: TForm8
   end
   object dg1: TDBGrid
     Left = 56
-    Top = 380
+    Top = 300
     Width = 617
     Height = 169
     DataSource = ds1
@@ -206,8 +206,8 @@ object Form8: TForm8
     OnCellClick = dg1CellClick
   end
   object b6: TButton
-    Left = 576
-    Top = 320
+    Left = 584
+    Top = 240
     Width = 89
     Height = 49
     Caption = 'LAPORAN'
@@ -281,8 +281,8 @@ object Form8: TForm8
   end
   object ds1: TDataSource
     DataSet = zqry1
-    Left = 512
-    Top = 208
+    Left = 240
+    Top = 480
   end
   object con1: TZConnection
     ControlsCodePage = cGET_ACP
@@ -295,8 +295,8 @@ object Form8: TForm8
     User = 'root'
     Protocol = 'mysql'
     LibraryLocation = 'D:\gigih\TugasAkhirVisual4O\libmysql.dll'
-    Left = 384
-    Top = 208
+    Left = 200
+    Top = 480
   end
   object zqry1: TZQuery
     Connection = con1
@@ -304,8 +304,8 @@ object Form8: TForm8
     SQL.Strings = (
       'select * from tabel_semester')
     Params = <>
-    Left = 384
-    Top = 256
+    Left = 328
+    Top = 480
   end
   object zqry2: TZQuery
     Connection = con1
@@ -313,8 +313,8 @@ object Form8: TForm8
     SQL.Strings = (
       'select * from table_siswa')
     Params = <>
-    Left = 512
-    Top = 272
+    Left = 368
+    Top = 488
   end
   object zqry3: TZQuery
     Connection = con1
@@ -322,8 +322,8 @@ object Form8: TForm8
     SQL.Strings = (
       'select * from tabel_poin')
     Params = <>
-    Left = 560
-    Top = 208
+    Left = 288
+    Top = 480
   end
   object zqry4: TZQuery
     Connection = con1
@@ -331,8 +331,8 @@ object Form8: TForm8
     SQL.Strings = (
       'select * from tabel_wali_kelas')
     Params = <>
-    Left = 552
-    Top = 256
+    Left = 408
+    Top = 488
   end
   object zqry5: TZQuery
     Connection = con1
@@ -340,8 +340,8 @@ object Form8: TForm8
     SQL.Strings = (
       'select * from tabel_ortu')
     Params = <>
-    Left = 608
-    Top = 248
+    Left = 464
+    Top = 480
   end
   object zqry6: TZQuery
     Connection = con1
@@ -349,7 +349,7 @@ object Form8: TForm8
     SQL.Strings = (
       'select * from tabel_kelas')
     Params = <>
-    Left = 648
-    Top = 248
+    Left = 504
+    Top = 480
   end
 end

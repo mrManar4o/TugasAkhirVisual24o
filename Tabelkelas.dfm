@@ -1,7 +1,7 @@
 object Formkelas: TFormkelas
   Left = 310
   Top = 167
-  Width = 802
+  Width = 896
   Height = 493
   Caption = 'TABEL KELAS'
   Color = clBtnFace
@@ -113,9 +113,9 @@ object Formkelas: TFormkelas
     OnClick = b5Click
   end
   object dg1: TDBGrid
-    Left = 64
-    Top = 248
-    Width = 617
+    Left = 368
+    Top = 8
+    Width = 441
     Height = 169
     DataSource = ds1
     TabOrder = 7
@@ -144,11 +144,12 @@ object Formkelas: TFormkelas
     Height = 49
     Caption = 'LAPORAN'
     TabOrder = 9
+    OnClick = b6Click
   end
   object ds1: TDataSource
     DataSet = zqry1
-    Left = 504
-    Top = 120
+    Left = 160
+    Top = 256
   end
   object con1: TZConnection
     ControlsCodePage = cGET_ACP
@@ -161,8 +162,8 @@ object Formkelas: TFormkelas
     User = 'root'
     Protocol = 'mysql'
     LibraryLocation = 'D:\gigih\TugasAkhirVisual4O\libmysql.dll'
-    Left = 504
-    Top = 24
+    Left = 64
+    Top = 248
   end
   object zqry1: TZQuery
     Connection = con1
@@ -170,7 +171,217 @@ object Formkelas: TFormkelas
     SQL.Strings = (
       'select * from tabel_kelas')
     Params = <>
-    Left = 504
-    Top = 72
+    Left = 112
+    Top = 248
+  end
+  object frxReport1: TfrxReport
+    Version = '4.0.11'
+    DotMatrixReport = False
+    IniFile = '\Software\Fast Reports'
+    PreviewOptions.Buttons = [pbPrint, pbLoad, pbSave, pbExport, pbZoom, pbFind, pbOutline, pbPageSetup, pbTools, pbEdit, pbNavigator, pbExportQuick]
+    PreviewOptions.Zoom = 1.000000000000000000
+    PrintOptions.Printer = 'Default'
+    PrintOptions.PrintOnSheet = 0
+    ReportOptions.CreateDate = 45106.453946215300000000
+    ReportOptions.LastChange = 45106.453946215300000000
+    ScriptLanguage = 'PascalScript'
+    ScriptText.Strings = (
+      'begin'
+      ''
+      'end.')
+    Left = 224
+    Top = 264
+    Datasets = <
+      item
+        DataSet = frxDBDataset1
+        DataSetName = 'frxDBDataset1'
+      end>
+    Variables = <>
+    Style = <>
+    object Data: TfrxDataPage
+      Height = 1000.000000000000000000
+      Width = 1000.000000000000000000
+    end
+    object Page1: TfrxReportPage
+      PaperWidth = 210.000000000000000000
+      PaperHeight = 297.000000000000000000
+      PaperSize = 9
+      object ReportTitle1: TfrxReportTitle
+        Height = 22.677180000000000000
+        Top = 18.897650000000000000
+        Width = 793.701300000000000000
+        object Memo1: TfrxMemoView
+          Left = 188.976500000000000000
+          Top = 3.779530000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          DisplayFormat.DecimalSeparator = ','
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = []
+          Memo.UTF8 = (
+            'LAPORAN DATA KELAS')
+          ParentFont = False
+        end
+      end
+      object PageHeader1: TfrxPageHeader
+        Height = 22.677180000000000000
+        Top = 64.252010000000000000
+        Width = 793.701300000000000000
+        object Memo2: TfrxMemoView
+          Left = 34.015770000000000000
+          Top = 3.779530000000000000
+          Width = 30.236240000000000000
+          Height = 18.897650000000000000
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = []
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8 = (
+            'NO')
+          ParentFont = False
+        end
+        object Memo3: TfrxMemoView
+          Left = 64.252010000000000000
+          Top = 3.779530000000000000
+          Width = 136.063080000000000000
+          Height = 18.897650000000000000
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = []
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8 = (
+            'NAMA')
+          ParentFont = False
+        end
+        object Memo4: TfrxMemoView
+          Left = 200.315090000000000000
+          Top = 3.779530000000000000
+          Width = 117.165430000000000000
+          Height = 18.897650000000000000
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = []
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8 = (
+            'JENIS')
+          ParentFont = False
+        end
+        object Memo5: TfrxMemoView
+          Left = 317.480520000000000000
+          Top = 3.779530000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = []
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8 = (
+            'JURUSAN')
+          ParentFont = False
+        end
+      end
+      object MasterData1: TfrxMasterData
+        Height = 22.677180000000000000
+        Top = 147.401670000000000000
+        Width = 793.701300000000000000
+        DataSet = frxDBDataset1
+        DataSetName = 'frxDBDataset1'
+        RowCount = 0
+        object Memo6: TfrxMemoView
+          Left = 34.015770000000000000
+          Width = 30.236240000000000000
+          Height = 18.897650000000000000
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          DisplayFormat.DecimalSeparator = ','
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = []
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8 = (
+            '[line]')
+          ParentFont = False
+        end
+        object Memo7: TfrxMemoView
+          Left = 64.252010000000000000
+          Width = 136.063080000000000000
+          Height = 18.897650000000000000
+          DataField = 'nama'
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = []
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8 = (
+            '[frxDBDataset1."nama"]')
+          ParentFont = False
+        end
+        object Memo8: TfrxMemoView
+          Left = 200.315090000000000000
+          Width = 117.165430000000000000
+          Height = 18.897650000000000000
+          DataField = 'jenis'
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = []
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8 = (
+            '[frxDBDataset1."jenis"]')
+          ParentFont = False
+        end
+        object Memo9: TfrxMemoView
+          Left = 317.480520000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          DataField = 'jurusan'
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = []
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8 = (
+            '[frxDBDataset1."jurusan"]')
+          ParentFont = False
+        end
+      end
+    end
+  end
+  object frxDBDataset1: TfrxDBDataset
+    UserName = 'frxDBDataset1'
+    CloseDataSource = False
+    DataSet = zqry1
+    Left = 272
+    Top = 256
   end
 end

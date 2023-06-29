@@ -140,8 +140,8 @@ object Form7: TForm7
     OnClick = b5Click
   end
   object dg1: TDBGrid
-    Left = 56
-    Top = 336
+    Left = 376
+    Top = 48
     Width = 617
     Height = 169
     DataSource = ds1
@@ -190,8 +190,8 @@ object Form7: TForm7
   end
   object ds1: TDataSource
     DataSet = zqry1
-    Left = 504
-    Top = 160
+    Left = 144
+    Top = 328
   end
   object con1: TZConnection
     ControlsCodePage = cGET_ACP
@@ -204,8 +204,8 @@ object Form7: TForm7
     User = 'root'
     Protocol = 'mysql'
     LibraryLocation = 'D:\gigih\TugasAkhirVisual4O\libmysql.dll'
-    Left = 504
-    Top = 64
+    Left = 64
+    Top = 328
   end
   object zqry1: TZQuery
     Connection = con1
@@ -213,8 +213,8 @@ object Form7: TForm7
     SQL.Strings = (
       'select * from tabel_hubungan')
     Params = <>
-    Left = 504
-    Top = 112
+    Left = 104
+    Top = 328
   end
   object zqry2: TZQuery
     Connection = con1
@@ -222,8 +222,8 @@ object Form7: TForm7
     SQL.Strings = (
       'select * from table_siswa')
     Params = <>
-    Left = 576
-    Top = 176
+    Left = 192
+    Top = 328
   end
   object zqry3: TZQuery
     Connection = con1
@@ -231,7 +231,7 @@ object Form7: TForm7
     SQL.Strings = (
       'select * from tabel_ortu')
     Params = <>
-    Left = 624
-    Top = 176
+    Left = 232
+    Top = 328
   end
 end

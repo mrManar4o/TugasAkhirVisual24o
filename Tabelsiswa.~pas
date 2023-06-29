@@ -41,7 +41,6 @@ type
     l10: TLabel;
     Edit9: TEdit;
     l11: TLabel;
-    l12: TLabel;
     dtp1: TDateTimePicker;
     procedure editbersih;
     procedure editenable;

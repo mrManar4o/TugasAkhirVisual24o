@@ -27,6 +27,8 @@ type
     Edit3: TEdit;
     Edit4: TEdit;
     l4: TLabel;
+    frxDBDataset1: TfrxDBDataset;
+    frxReport1: TfrxReport;
     procedure editbersih;
     procedure editenable;
     procedure posisiawal;
